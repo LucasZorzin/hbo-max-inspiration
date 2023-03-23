@@ -1,0 +1,47 @@
+.btn-genre {
+    width: 190px;
+    border-radius: 50px;
+    border: 2px solid rgb(207, 207, 207);
+    padding: 7px 0px;
+    margin: 0 10px;
+    font-size: 14px;
+    color: white;
+    background-color: transparent;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.btn-genre:hover {
+    border-color: var(--primary);
+}
+
+.btn-genre--active {
+    border-color: var(--primary);
+    box-shadow: 0px 5px 20px rgba(111, 0, 255, 0.568);
+}
+.mySwiper--category {
+    margin-left: 80px !important;
+    margin-right: 80px !important;
+    overflow: initial !important;
+    cursor: e-resize;
+    margin-bottom: 50px;
+}
+
+//! MOBILE
+@media (max-width: 576px) {
+    .searches-related{
+        margin-bottom: 20px;
+    }
+    .btn-genre {
+        width: 160px;
+        font-size: 13px;
+        margin: 0;
+    }
+    .btn-genre:hover {
+        border-color: rgb(207, 207, 207);
+    }
+    .mySwiper--category {
+        margin-left: 10px !important;
+        margin-right: 30px !important;
+    }
+}

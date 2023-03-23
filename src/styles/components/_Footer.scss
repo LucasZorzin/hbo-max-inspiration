@@ -1,0 +1,25 @@
+footer{
+    // margin-top: 50px;
+    min-height: 3vh;
+    width: 100vw;
+    padding: 1.8vh 0;
+    background-color: var(--primary);
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    // position: absolute;
+    // bottom: 0;
+    span{
+        display: block;
+
+        a{
+            width: initial;
+            display: initial;
+            color: white;
+            transition: all .3s ease;
+        }
+        a:hover{
+            color: rgb(48, 0, 126);
+        }
+    }
+}
