@@ -11,8 +11,8 @@ const FilteredMovies = ({ filteredMovies }) => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowRelatedSearches(true);
-        }, 3000);
-        return () => {clearTimeout(timer); setShowRelatedSearches(false)};
+        }, 4000);
+        return () => { clearTimeout(timer); setShowRelatedSearches(false) };
     }, [filteredMovies]);
 
     return (
@@ -35,12 +35,12 @@ const FilteredMovies = ({ filteredMovies }) => {
                         null
                 ))
                 :
-                <span className={showRelatedSearches ? 'no-related-searches' : 'no-related-searches no-related-searches--hidden'}>
+                <span className='no-related-searches'>
                     {
-                        (filteredMovies?.length === 0) ?
-                            'No related searches have been found'
+                        (showRelatedSearches && filteredMovies?.length === 0) ?
+                            'No related searches have been found 😔'
                             :
-                            ''
+                            <div class="lds-dual-ring"></div>
                     }
                 </span>
             }
