@@ -24,10 +24,10 @@ const FilteredMovies = ({ filteredMovies }) => {
                             <div className='movies-slider-container'>
                                 <div className='movies-slider'>
                                     <div className='movies-slider-icons'>
-                                        <button onClick={() => { Router.push(`/content/${movie.id}?name=${movie.name !== undefined ? movie.name : movie.title}&type=${movie.media_type !== undefined ? movie.media_type : router?.asPath?.includes('series') ? 'tv' : 'movie'}&play=true`); sendFilteredContent({ filteredMovies: movie }) }} className='play' />
-                                        <button onClick={() => { Router.push(`/content/${movie.id}?name=${movie.name !== undefined ? movie.name : movie.title}&type=${movie.media_type !== undefined ? movie.media_type : router?.asPath?.includes('series') ? 'tv' : 'movie'}`); sendFilteredContent({ filteredMovies: movie }) }} className='info' />
+                                        <button onClick={() => { Router.push(`/content/${movie.id}?name=${movie.name !== undefined ? movie.name : movie.title}&type=${movie.media_type !== undefined ? movie.media_type : router?.asPath?.includes('series') ? 'tv' : 'movie'}&play=true`) }} className='play' />
+                                        <button onClick={() => { Router.push(`/content/${movie.id}?name=${movie.name !== undefined ? movie.name : movie.title}&type=${movie.media_type !== undefined ? movie.media_type : router?.asPath?.includes('series') ? 'tv' : 'movie'}`) }} className='info' />
                                     </div>
-                                    <img onClick={() => { Router.push(`/content/${movie.id}?name=${movie.name !== undefined ? movie.name : movie.title}&type=${movie.media_type !== undefined ? movie.media_type : router?.asPath?.includes('series') ? 'tv' : 'movie'}`); sendFilteredContent({ filteredMovies: movie }) }} src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.name !== undefined ? movie.name : movie.title} width={180} height={270} />
+                                    <img onClick={() => { Router.push(`/content/${movie.id}?name=${movie.name !== undefined ? movie.name : movie.title}&type=${movie.media_type !== undefined ? movie.media_type : router?.asPath?.includes('series') ? 'tv' : 'movie'}`) }} src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.name !== undefined ? movie.name : movie.title} width={180} height={270} />
                                 </div>
                             </div>
                         </div>
