@@ -11,7 +11,7 @@ const FilteredMovies = ({ filteredMovies }) => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowRelatedSearches(true);
-        }, 1000);
+        }, 3000);
         return () => {clearTimeout(timer); setShowRelatedSearches(false)};
     }, [filteredMovies]);
 
