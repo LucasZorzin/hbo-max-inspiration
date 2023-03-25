@@ -858,6 +858,7 @@ nav {
 }
 
 .carousel-data h3 {
+  width: 100%;
   font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 65px;
@@ -1057,7 +1058,7 @@ nav {
     margin: 0 auto 10px auto;
   }
   .carousel-data h3 {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 800;
   }
   .carousel-data p {
@@ -1362,6 +1363,10 @@ footer span a:hover {
   background-size: cover;
   width: 100vw;
   height: 100vh;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1460,12 +1465,26 @@ footer span a:hover {
   .back {
     display: none;
   }
+  .content .content__background {
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+  .content .content__background .carousel-layer {
+    min-height: 100vh;
+  }
+  .content .content__background img {
+    min-height: 100vh;
+  }
   .content .content__background .content__text {
+    top: 10vh;
+    overflow-wrap: break-word;
     max-width: 90vw;
   }
   .content .content__background .content__text h3 {
     margin-top: 50px;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 800;
   }
   .content .content__background .content__text p {
