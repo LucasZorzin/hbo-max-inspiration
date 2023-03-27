@@ -1386,6 +1386,7 @@ footer span a:hover {
 .content .content__background .content__text {
   position: absolute;
   z-index: 2;
+  top: 25vh;
   left: 5%;
   max-width: 45vw;
   font-family: "Montserrat", sans-serif;
