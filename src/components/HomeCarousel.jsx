@@ -9,7 +9,7 @@ const HomeCarousel = ({ movies }) => {
 
     return (
         <div className='carousel-container'>
-            <Carousel controls={false}>
+            <Carousel pause={false} controls={false}>
 
                 {moviesAndSeries?.map((movie, index) => (
                     <Carousel.Item key={index}>
